@@ -1,13 +1,10 @@
-<<<<<<< HEAD
-# leaflet-challenge
-=======
-Leaflet Challenge
+**Leaflet Challenge**
 
 This project focuses on creating an interactive map to visualize earthquake data provided by the USGS (United States Geological Survey). Using Leaflet.js, we developed a tool to plot earthquake data dynamically, providing insightful visuals to better understand seismic activity worldwide.
 
-We started by setting up the foundation with a basemap tile layer from OpenStreetMap to serve as the map's background. Additionally, an optional street tile layer was created to offer users a secondary map style. To display the data, we initialized the map object, centered at [0,0] with a zoom level of 2, ensuring a global view. The layers, including earthquakes and optional tectonic plate data, were managed using separate layer groups for clarity and interactivity.
+We started by setting up the foundation with a `basemap` tile layer from OpenStreetMap to serve as the map's background. Additionally, an optional `street` tile layer was created to offer users a secondary map style. To display the data, we initialized the map object, centered at `[0,0] `with a zoom level of 2, ensuring a global view. The layers, including earthquakes and optional tectonic plate data, were managed using separate layer groups for clarity and interactivity.
 
-The earthquake data, retrieved dynamically from the USGS GeoJSON API, was plotted using L.circleMarker .The size of each marker was determined by the earthquake's magnitude, using a scaling function to ensure visual prominence for stronger earthquakes. Depth information was encoded using a color scale, with deeper earthquakes represented in darker tones and shallower ones in lighter hues. The markers were further enhanced with interactive popups that display details such as the earthquake's magnitude, depth, and location.
+The earthquake data, retrieved dynamically from the USGS GeoJSON API, was plotted using       `L.circleMarker` .The size of each marker was determined by the earthquake's magnitude, using a scaling function to ensure visual prominence for stronger earthquakes. Depth information was encoded using a color scale, with deeper earthquakes represented in darker tones and shallower ones in lighter hues. The markers were further enhanced with interactive popups that display details such as the earthquake's magnitude, depth, and location.
 
 A legend was added to the map, positioned in the bottom-right corner, to provide context for the color coding of earthquake depths. However, during development, we encountered an issue where the colors were not showing up in the legend. After investigating, we discovered that the missing colors were due to the absence of proper CSS styling for the <i>  elements used to represent colored squares. To resolve this issue, we added the following CSS to our stylesheet:
 
@@ -29,4 +26,4 @@ https://leafletjs.com/reference.html
 https://d3js.org/getting-started
 https://www.w3schools.com/js/default.asp
 
->>>>>>> master
+
